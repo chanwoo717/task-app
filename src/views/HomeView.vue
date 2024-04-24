@@ -40,7 +40,7 @@ export default defineComponent({
 <style>
 
 .home>h1{
-  margin: 120px auto 70px;
+  margin: 90px auto 70px;
   text-decoration: underline overline;
 }
 

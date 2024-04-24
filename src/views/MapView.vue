@@ -11,7 +11,6 @@
 </template>
 <script>
 /* eslint-disable no-undef */
-import { ref, onMounted } from 'vue';
 import { Loader } from '@googlemaps/js-api-loader';
 
 export default {
@@ -73,7 +72,7 @@ export default {
                         map: this.map,
                         title: place.name
                     });
-                } console.log(new google.maps.Marker);
+                }
             });
         }
     }
@@ -121,7 +120,7 @@ button>img {
     background-color: #212730;
     border-radius: 20px;
     margin: 2rem auto;
-    height: 75vh;
+    height: 72vh;
     padding: 2rem;
 }
 
