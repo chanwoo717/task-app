@@ -35,7 +35,7 @@ import moment from 'moment';
             async fetchWeatherData(){
                 const apiKey = 'f67e61cc51768e03f63add9847d177ea';
                 const city = this.cityname;
-                const apiUrl = `http://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&id&appid=${apiKey}`;
+                const apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&id&appid=${apiKey}`;
                 await axios.get(apiUrl).then(Response =>{
                     const forecastData = Response.data.list;
                     const filteredData = forecastData.map(item =>{
@@ -43,7 +43,7 @@ import moment from 'moment';
                             date : moment(item.dt_txt.split(' ')[0]),
                             temperature : Math.round(item.main.temp),
                             description : item.weather[0].description,
-                            iconUrl:`http://api.openweathermap.org/img/w/${item.weather[0].icon}.png`,
+                            iconUrl:`https://api.openweathermap.org/img/w/${item.weather[0].icon}.png`,
                         };
                     }).reduce((acc,item)=>{
                         if(!acc.some(day => day.date.isSame(item.date, 'day'))){

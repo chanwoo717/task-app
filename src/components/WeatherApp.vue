@@ -83,7 +83,7 @@ export default defineComponent({
     async updated(){
         try{
             
-            const response = await axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${this.city}&units=metric&id&appid=f67e61cc51768e03f63add9847d177ea`);
+            const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${this.city}&units=metric&id&appid=f67e61cc51768e03f63add9847d177ea`);
             const weatherData = response.data;
             
             this.temperature = Math.round(weatherData.main.temp);
@@ -93,7 +93,7 @@ export default defineComponent({
             this.humidity = weatherData.main.humidity;
             this.sea_level = weatherData.main.sea_level;
             this.country = weatherData.sys.country;
-            this.iconUrl = `http://api.openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
+            this.iconUrl = `https://api.openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
             const d = new Date();
             this.date = d.getDate() + '-' + this.monthNames[d.getMonth()] + '-' + d.getFullYear();
             this.time = d.getHours() + ':' + d.getMinutes() + ':' + d.getSeconds();
