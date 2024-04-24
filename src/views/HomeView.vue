@@ -1,10 +1,10 @@
 <template>
   <div class="home" style="color: white;">
     <h1>
-      Task-App
+      Daily-App
     </h1>
     <div class="intro-home">
-      <p> Welcome to your daily Task-App! <br> Here you will have access to your daily needs. <br> <br> <b>Select one and try it out!</b></p>
+      <p> Welcome to your Daily-App! <br> Manage your daily tasks here. <br> <br> <b>Select one and try it out!</b></p>
     </div>
     <div class="bigbox">
       <div class="mediumbox">
@@ -75,7 +75,7 @@ export default defineComponent({
   border-radius: 30px;
   height: 250px;
   width: 300px;
-  background-color: white;
+  background-color: #253d5c;
   margin: 5px;
 }
 

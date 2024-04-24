@@ -27,13 +27,14 @@ body {
 }
 
 nav {
-  padding: 50px;
+  padding: 50px 0;
 
   a {
+    word-break: keep-all;
     font-weight: bold;
     color: #cfcfcf;
     margin: auto 30px;
-    text-decoration: overline underline wavy;
+    text-decoration: overline underline;
     &.router-link-exact-active {
       color: #5ac4f5;
     }
