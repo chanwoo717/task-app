@@ -293,12 +293,14 @@ input:checked ~ .bubble::after {
 }
 
 .todo-item .todo-content {
+	display: flex;
 	flex: 1 1 0%;
 }
 
 .todo-item .todo-content input {
 	color: var(--dark);
 	font-size: 1.125rem;
+	text-align: center;
 }
 
 .todo-item .actions {
